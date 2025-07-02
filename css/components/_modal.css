@@ -1,0 +1,92 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__content {
+  background: white;
+  padding: 24px 30px;
+  border-radius: 12px;
+  color: #222222;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal.active .modal__content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal__info {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  max-width: 300px;
+  color: #555;
+}
+
+.modal__form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  cursor: pointer;
+  max-width: max-content;
+}
+
+.modal__form input,
+.modal__form textarea,
+.modal__form select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  resize: none;
+  font-size: 15px;
+  border: 1px solid #ccc;
+}
+
+.modal__form textarea {
+  min-height: 140px;
+}
+
+.modal__form button {
+  background-color: #000;
+  color: #fff;
+  padding: 13px 34px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}

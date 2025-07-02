@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FixinMoto</title>
+  <meta name="description"
+        content="Профессиональный автосервис в Белореченске. Ремонт двигателей, замена масла, диагностика, тормоза и шины. Качество, опыт, честные цены.">
+  <link rel="icon" href="images/favicon.svg" type="images/x-icon">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__left">
+        <a class="logo" href="/">
+          <img class="header__logo" src="images/logo.svg" width="42" height="42" alt="Логотип">
+          BoikoAuto
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li>
+            <a class="header__link desktop" href="#services">Все услуги</a>
+          </li>
+          <li>
+            <a class="header__link" href="about.html">О нас</a>
+          </li>
+          <li>
+            <a class="header__link desktop" href="#reviews">Отзывы</a>
+          </li>
+          <li>
+            <a class="header__link desktop" href="#news">Новости</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__right">
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu">
+  <ul class="header__list">
+    <li>
+      <a class="header__link mobile" href="#about">О нас</a>
+    </li>
+    <li>
+      <a class="header__link mobile" href="#benefits">Преимущества</a>
+    </li>
+    <li>
+      <a class="header__link mobile" href="#services">Услуги</a>
+    </li>
+    <li>
+      <a class="header__link mobile" href="#reviews">Отзывы</a>
+    </li>
+    <li>
+      <a class="header__link mobile" href="#photos">Фото с праздников</a>
+    </li>
+  </ul>
+</nav>
+<main>
+  <section class="home indent">
+    <div class="container">
+      <div class="home__info">
+        <h1 class="home__title">
+          Управляй с уверенностью вместе с <span>BoikoMoto</span>
+        </h1>
+        <p class="home__text">
+          Ваш автомобиль заслуживает лучшего ухода, и мы обеспечим его с точностью, скоростью и надёжностью.
+          Запишитесь на обслуживание уже сегодня!
+        </p>
+        <div class="home__actions">
+          <button class="home__action btn" type="button" data-btn-modal-order>Записаться на услугу</button>
+          <a class="home__action btn btn--white" href="services.html">Наши услуги</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="home-services indent">
+    <div class="container">
+      <div class="home-services__top">
+        <div class="home-services__left">
+          <span class="title-section__subtext">Наши услуги</span>
+          <h2 class="title-section">
+            <span>Комплексные решения</span>
+            для авто
+          </h2>
+        </div>
+        <p class="home-services__text">
+          От планового техобслуживания до сложной диагностики — мы берём на себя все заботы о вашем автомобиле.
+        </p>
+      </div>
+      <ul class="home-services__list">
+        <li class="home-services__item" style="background-image: url('images/services/1.jpg')">
+          <span class="home-services__number">01</span>
+          <img src="images/icons/services/1.svg" width="64" height="64" alt="иконка для сервиса авто">
+          <h3 class="home-services__name">Обслуживание двигателя</h3>
+        </li>
+        <li class="home-services__item" style="background-image: url('images/services/2.jpg')">
+          <span class="home-services__number">02</span>
+          <img src="images/icons/services/2.svg" width="64" height="64" alt="иконка для сервиса авто">
+          <h3 class="home-services__name">Замена масла <br> и фильтров</h3>
+        </li>
+        <li class="home-services__item" style="background-image: url('images/services/3.jpg')">
+          <span class="home-services__number">03</span>
+          <img src="images/icons/services/3.svg" width="64" height="64" alt="иконка для сервиса авто">
+          <h3 class="home-services__name">Обслуживание тормозной системы</h3>
+        </li>
+        <li class="home-services__item" style="background-image: url('images/services/4.jpg')">
+          <span class="home-services__number">04</span>
+          <img src="images/icons/services/4.svg" width="64" height="64" alt="иконка для сервиса авто">
+          <h3 class="home-services__name">Уход <br> за шинами</h3>
+        </li>
+      </ul>
+      <a class="home-services__link btn" href="services.html">Посмотреть все услуги</a>
+    </div>
+  </section>
+  <section class="reviews indent" id="reviews">
+    <div class="container">
+      <span class="title-section__subtext">Отзывы нашего СТО</span>
+      <h2 class="reviews__title title-section">
+        Что говорят водители о <span>BoikoMoto</span>
+      </h2>
+      <div class="reviews__inner">
+        <div class="reviews__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <img class="reviews__img" src="images/reviews/1.webp" width="108" height="108"
+                     alt="Отзыв владельца авто об СТО">
+                <p class="reviews__text">
+                  Уже несколько лет обслуживаю машину в данный сервис — ни разу не подвели. Персонал не только
+                  дружелюбный, но и реально шарит: всё объясняют, показывают, не торопят. Смело рекомендую всем,
+                  кто ищет надёжный автосервис
+                </p>
+                <h3 class="reviews__name">Андрей Копраков</h3>
+                <img src="images/icons/5stars.svg" width="96" height="16" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <img class="reviews__img" src="images/reviews/2.webp" width="108" height="108"
+                     alt="Отзыв владельца авто об СТО">
+                <p class="reviews__text">
+                  Когда у меня неожиданно сломалась машина, то в этой СТОшке приняли меня в тот же день. Быстро нашли
+                  проблему и оперативно всё починили. Очень благодарен за скорость и качественный подход
+                </p>
+                <h3 class="reviews__name">Арсен Гонгадзе</h3>
+                <img src="images/icons/5stars.svg" width="96" height="16" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <img class="reviews__img" src="images/reviews/3.webp" width="108" height="108"
+                     alt="Отзыв владельца авто об СТО">
+                <p class="reviews__text">
+                  Возникла срочная поломка, и я попал на приём в BoikoMoto в тот же день. Починили быстро, всё работает.
+                  Единственное — пришлось немного подождать, пока освободится мастер. Но в целом сервис достойный,
+                  рекомендую.
+                </p>
+                <h3 class="reviews__name">Саша Кадырова</h3>
+                <img src="images/icons/4stars.svg" width="96" height="16" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__card">
+                <img class="reviews__img" src="images/reviews/2.webp" width="108" height="108"
+                     alt="Отзыв владельца авто об СТО">
+                <p class="reviews__text">
+                  Обратился в сервис по рекомендации. Ребята действительно разбираются, сделали всё грамотно. Правда, не
+                  было кофе или зоны ожидания, но зато машину отдали в полном порядке. Главное — надёжно
+                </p>
+                <h3 class="reviews__name">Антон Бай</h3>
+                <img src="images/icons/4stars.svg" width="96" height="16" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="reviews__bottom">
+            <a
+                class="reviews__link btn btn--white"
+                href="https://zoon.ru/msk/autoservice/avtotehtsentr_sotta_na_metro_chkalovskaya/"
+                target="_blank"
+            >
+              Читать все отзывы
+            </a>
+            <div class="reviews__navigation">
+              <button class="reviews__btn reviews__btn--prev" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26" fill="none">
+                  <path
+                      d="M0.479111 11.8312L11.9338 0.456157C12.2424 0.160151 12.6557 -0.003641 13.0848 6.1429e-05C13.5139 0.00376386 13.9243 0.174664 14.2277 0.475952C14.5311 0.77724 14.7032 1.18481 14.7069 1.61088C14.7106 2.03695 14.5457 2.44743 14.2476 2.75391L5.58625 11.355H34.3636C34.7976 11.355 35.2138 11.5262 35.5207 11.831C35.8276 12.1357 36 12.5491 36 12.98C36 13.411 35.8276 13.8243 35.5207 14.1291C35.2138 14.4338 34.7976 14.605 34.3636 14.605H5.58625L14.2476 23.2062C14.4039 23.3561 14.5286 23.5354 14.6143 23.7336C14.7001 23.9319 14.7452 24.1451 14.7471 24.3609C14.749 24.5766 14.7076 24.7906 14.6253 24.9903C14.543 25.19 14.4215 25.3715 14.2679 25.524C14.1142 25.6766 13.9315 25.7973 13.7304 25.879C13.5293 25.9607 13.3139 26.0018 13.0966 25.9999C12.8793 25.9981 12.6646 25.9532 12.4649 25.8681C12.2653 25.7829 12.0847 25.6591 11.9338 25.5039L0.479111 14.1289C0.172337 13.8242 0 13.4109 0 12.98C0 12.5491 0.172337 12.1359 0.479111 11.8312Z"
+                      fill="white"/>
+                </svg>
+              </button>
+              <button class="reviews__btn reviews__btn--next" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26" fill="none">
+                  <path
+                      d="M35.5209 11.8312L24.0662 0.456157C23.7576 0.160151 23.3443 -0.003641 22.9152 6.1429e-05C22.4861 0.00376386 22.0757 0.174664 21.7723 0.475952C21.4689 0.77724 21.2968 1.18481 21.2931 1.61088C21.2894 2.03695 21.4543 2.44743 21.7524 2.75391L30.4137 11.355H1.63638C1.20238 11.355 0.786165 11.5262 0.479284 11.831C0.172404 12.1357 0 12.5491 0 12.98C0 13.411 0.172404 13.8243 0.479284 14.1291C0.786165 14.4338 1.20238 14.605 1.63638 14.605H30.4137L21.7524 23.2062C21.5961 23.3561 21.4714 23.5354 21.3857 23.7336C21.2999 23.9319 21.2548 24.1451 21.2529 24.3609C21.251 24.5766 21.2924 24.7906 21.3747 24.9903C21.457 25.19 21.5785 25.3715 21.7321 25.524C21.8858 25.6766 22.0685 25.7973 22.2696 25.879C22.4707 25.9607 22.6861 26.0018 22.9034 25.9999C23.1207 25.9981 23.3354 25.9532 23.5351 25.8681C23.7347 25.7829 23.9153 25.6591 24.0662 25.5039L35.5209 14.1289C35.8277 13.8242 36 13.4109 36 12.98C36 12.5491 35.8277 12.1359 35.5209 11.8312Z"
+                      fill="white"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news" id="news">
+    <div class="container">
+      <span class="title-section__subtext">Наш блог</span>
+      <h2 class="news__title title-section">
+        Заводи по полной: <span>свежие </span> новости и инсайты из <span>мира авто</span>
+      </h2>
+      <div class="news__navigation">
+        <button class="news__btn news__btn--prev swiper-button-disabled" type="button" disabled="" tabindex="-1"
+                aria-label="Previous slide" aria-controls="swiper-wrapper-4bf4d610c44288cc4" aria-disabled="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.2071 5.70711C16.5976 5.31658 16.5976 4.68342 16.2071 4.29289C15.8166 3.90237 15.1834 3.90237 14.7929 4.29289L7.79289 11.2929C7.40237 11.6834 7.40237 12.3166 7.79289 12.7071L14.7929 19.7071C15.1834 20.0976 15.8166 20.0976 16.2071 19.7071C16.5976 19.3166 16.5976 18.6834 16.2071 18.2929L9.91421 12L16.2071 5.70711Z"
+                  fill="white"></path>
+          </svg>
+        </button>
+        <button class="news__btn news__btn--next" type="button" tabindex="0" aria-label="Next slide"
+                aria-controls="swiper-wrapper-4bf4d610c44288cc4" aria-disabled="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.20711 4.29289C8.81658 3.90237 8.18342 3.90237 7.79289 4.29289C7.40237 4.68342 7.40237 5.31658 7.79289 5.70711L14.0858 12L7.79289 18.2929C7.40237 18.6834 7.40237 19.3166 7.79289 19.7071C8.18342 20.0976 8.81658 20.0976 9.20711 19.7071L16.2071 12.7071C16.5976 12.3166 16.5976 11.6834 16.2071 11.2929L9.20711 4.29289Z"
+                  fill="white"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="swiper news__swiper indent">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="news__card">
+              <img class="news__img" src="images/news-1.jpg" height="330" alt="фотография для новости автосервиса">
+              <div class="news__top">
+                <span class="news__category">Спорткары</span>
+                <span class="news__time">Читать 13 мин.</span>
+              </div>
+              <a class="news__link" href="">Porsche 911 Turbo S: Немецкая ракета с характером</a>
+              <span class="news__date">
+                <img src="images/icons/time.svg" width="18" height="18" alt="">
+                Август 29, 2024
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news__card">
+              <img class="news__img" src="images/news-2.jpg" height="330" alt="фотография для новости автосервиса">
+              <div class="news__top">
+                <span class="news__category">Диски</span>
+                <span class="news__time">Читать 7 мин.</span>
+              </div>
+              <a class="news__link" href="">Почему литые диски — не понт, а необходимость</a>
+              <span class="news__date">
+                <img src="images/icons/time.svg" width="18" height="18" alt="">
+                Июнь 15, 2025
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news__card">
+              <img class="news__img" src="images/news-3.jpg" height="330" alt="фотография для новости автосервиса">
+              <div class="news__top">
+                <span class="news__category">Спорткары</span>
+                <span class="news__time">Читать 28 мин.</span>
+              </div>
+              <a class="news__link" href="">Маслкары в России: грубая сила, которая рулит</a>
+              <span class="news__date">
+                <img src="images/icons/time.svg" width="18" height="18" alt="">
+                Июнь 29, 2025
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news__card">
+              <img class="news__img" src="images/news-1.jpg" height="330" alt="фотография для новости автосервиса">
+              <div class="news__top">
+                <span class="news__category">Спорткары</span>
+                <span class="news__time">Читать 13 мин.</span>
+              </div>
+              <a class="news__link" href="">Porsche 911 Turbo S: Немецкая ракета с характером</a>
+              <span class="news__date">
+                <img src="images/icons/time.svg" width="18" height="18" alt="">
+                Август 29, 2024
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news__card">
+              <img class="news__img" src="images/news-2.jpg" height="330" alt="фотография для новости автосервиса">
+              <div class="news__top">
+                <span class="news__category">Диски</span>
+                <span class="news__time">Читать 7 мин.</span>
+              </div>
+              <a class="news__link" href="">Почему литые диски — не понт, а необходимость</a>
+              <span class="news__date">
+                <img src="images/icons/time.svg" width="18" height="18" alt="">
+                Июнь 15, 2025
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news__card">
+              <img class="news__img" src="images/news-1.jpg" height="330" alt="фотография для новости автосервиса">
+              <div class="news__top">
+                <span class="news__category">Спорткары</span>
+                <span class="news__time">Читать 13 мин.</span>
+              </div>
+              <a class="news__link" href="">Porsche 911 Turbo S: Немецкая ракета с характером</a>
+              <span class="news__date">
+                <img src="images/icons/time.svg" width="18" height="18" alt="">
+                Август 29, 2024
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__columns">
+      <div class="footer__column footer__left">
+        <a class="logo" href="/">
+          <img class="header__logo" src="images/logo.svg" width="42" height="42" alt="Логотип">
+          BoikoAuto
+        </a>
+        <a class="footer__link top" href="https://yandex.ru/maps/-/CHghqF85" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+                d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+                fill="#DB323E"/>
+            <path
+                d="M11.3008 6.57667C11.3008 9.39871 8.00001 12.7247 8.00001 12.7247C8.00001 12.7247 4.69922 9.39871 4.69922 6.57667C4.69922 4.74989 6.17323 3.27588 8.00001 3.27588C9.82678 3.27588 11.3008 4.74989 11.3008 6.57667Z"
+                fill="#292929"/>
+            <path
+                d="M7.99991 8.23858C8.91835 8.23858 9.6629 7.49404 9.6629 6.57559C9.6629 5.65714 8.91835 4.9126 7.99991 4.9126C7.08146 4.9126 6.33691 5.65714 6.33691 6.57559C6.33691 7.49404 7.08146 8.23858 7.99991 8.23858Z"
+                fill="#DB323E"/>
+          </svg>
+          г. Белореченск, ул. Дундича, д. 43
+        </a>
+        <a class="footer__link top" href="tel:+79505404332">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+                d="M8 0C3.58203 0 0 3.58203 0 8C0 12.418 3.58203 16 8 16C12.418 16 16 12.418 16 8C16 3.58203 12.418 0 8 0ZM12.2246 11.6728L11.584 12.3135C11.4697 12.4277 11.1348 12.499 11.124 12.499C9.09766 12.5166 7.1465 11.7207 5.71291 10.2871C4.27541 8.84866 3.47853 6.89062 3.5 4.85744C3.5 4.85647 3.57325 4.53125 3.6875 4.41797L4.32812 3.77734C4.5625 3.542 5.01269 3.43553 5.32812 3.541L5.46291 3.58594C5.77738 3.69141 6.10744 4.03906 6.19434 4.35938L6.51662 5.542C6.60353 5.86328 6.48634 6.32031 6.25197 6.55469L5.82422 6.98244C6.24416 8.53712 7.46387 9.75684 9.01856 10.1777L9.44628 9.75C9.68163 9.51466 10.1387 9.39747 10.459 9.48438L11.6416 9.80762C11.9619 9.89553 12.3096 10.2237 12.415 10.5381L12.46 10.6748C12.5645 10.9893 12.459 11.4395 12.2246 11.6728Z"
+                fill="#DB323E"/>
+          </svg>
+          +7 950 540 43 32
+        </a>
+        <a class="footer__link top" href="mailto:hello@FixinMoto.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+                d="M8 0C3.5888 0 0 3.5888 0 8C0 12.4112 3.5888 16 8 16C12.4112 16 16 12.4112 16 8C16 3.5888 12.4112 0 8 0ZM12.8 10.9333C12.8 11.3744 12.4411 11.7333 12 11.7333H4C3.55893 11.7333 3.2 11.3744 3.2 10.9333V6.56C3.20001 6.50736 3.2156 6.45591 3.2448 6.41211C3.274 6.36832 3.31551 6.33414 3.3641 6.3139C3.41269 6.29365 3.46618 6.28824 3.51784 6.29834C3.5695 6.30845 3.61702 6.33361 3.6544 6.37067L7.09387 9.78133C7.5776 10.2347 8.40853 10.2459 8.93013 9.7584L12.3456 6.3808C12.3456 6.33689 12.3564 6.29367 12.3771 6.25495C12.3978 6.21624 12.4278 6.18324 12.4643 6.15888C12.5009 6.13452 12.5428 6.11956 12.5865 6.11533C12.6302 6.11109 12.6743 6.11771 12.7148 6.13459C12.7554 6.15148 12.7911 6.17811 12.8189 6.21213C12.8466 6.24614 12.8656 6.28648 12.874 6.32957C12.8824 6.37266 12.8801 6.41716 12.8672 6.45913C12.8542 6.50109 12.8312 6.53922 12.8 6.57013V10.9333ZM12.7211 5.26027L8.56267 9.37227C8.40213 9.52267 8.20907 9.6 8 9.6C7.79733 9.6 7.6016 9.5264 7.464 9.39787L7.45867 9.39253L3.28 5.248C3.25455 5.22277 3.23444 5.19268 3.22087 5.1595C3.20731 5.12633 3.20058 5.09077 3.20107 5.05493C3.20483 4.8452 3.29054 4.64528 3.43986 4.49795C3.58918 4.35063 3.79024 4.26761 4 4.26667H12C12.4411 4.26667 12.8 4.6256 12.8 5.06667C12.8002 5.13908 12.7719 5.20866 12.7211 5.26027Z"
+                fill="#DB323E"/>
+          </svg>
+          hello@FixinMoto.com
+        </a>
+      </div>
+      <div class="footer__column work">
+        <h3 class="footer__column-name">График работы</h3>
+        <p class="footer__info">
+          ПН-ПТ : 08.00 - 20.00 <br> <br>
+          СБ-ВС : 10.00 - 17.00
+        </p>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__column-name">Основные разделы</h3>
+        <div class="footer__links">
+          <a class="footer__link" href="">Все услуги</a>
+          <a class="footer__link" href="">О нас</a>
+          <a class="footer__link" href="">Отзывы</a>
+          <a class="footer__link" href="">Новости</a>
+          <a class="footer__link" href="">Контакты</a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__column-name">Соц. сети</h3>
+        <div class="footer__socials">
+          <a class="whatsapp" href="https://wa.me/79935234862" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path
+                  d="M0 30L2.11881 22.2962C0.811354 20.0412 0.124341 17.485 0.125597 14.8637C0.129364 6.66875 6.82994 0 15.0628 0C19.058 0.00125 22.8083 1.55 25.6292 4.36C28.4489 7.17 30.0013 10.905 30 14.8775C29.9962 23.0738 23.2957 29.7425 15.0628 29.7425C12.5634 29.7413 10.1005 29.1175 7.91886 27.9325L0 30ZM8.28561 25.2413C10.3906 26.485 12.4001 27.23 15.0578 27.2312C21.9003 27.2312 27.4743 21.6887 27.478 14.875C27.4805 8.0475 21.9329 2.5125 15.0678 2.51C8.2203 2.51 2.65009 8.0525 2.64758 14.865C2.64632 17.6463 3.46521 19.7287 4.84049 21.9075L3.58578 26.4675L8.28561 25.2413ZM22.5873 18.4113C22.4943 18.2563 22.2457 18.1637 21.8714 17.9775C21.4984 17.7912 19.6634 16.8925 19.3205 16.7687C18.9789 16.645 18.7302 16.5825 18.4803 16.955C18.2316 17.3263 17.5157 18.1638 17.2984 18.4113C17.0811 18.6588 16.8626 18.69 16.4896 18.5038C16.1166 18.3175 14.9133 17.9263 13.4878 16.66C12.3788 15.675 11.629 14.4588 11.4117 14.0863C11.1944 13.715 11.3891 13.5138 11.575 13.3288C11.7433 13.1625 11.948 12.895 12.1351 12.6775C12.3248 12.4625 12.3863 12.3075 12.5119 12.0588C12.6363 11.8113 12.5747 11.5938 12.4805 11.4075C12.3863 11.2225 11.6403 9.39375 11.3301 8.65C11.0261 7.92625 10.7184 8.02375 10.4898 8.0125L9.77393 8C9.52524 8 9.12082 8.0925 8.7792 8.465C8.43758 8.8375 7.473 9.735 7.473 11.5638C7.473 13.3925 8.8106 15.1587 8.99648 15.4062C9.18362 15.6537 11.6277 19.4063 15.3718 21.015C16.2622 21.3975 16.958 21.6262 17.4994 21.7975C18.3936 22.08 19.2075 22.04 19.8505 21.945C20.5677 21.8387 22.0585 21.0462 22.37 20.1787C22.6815 19.31 22.6815 18.5663 22.5873 18.4113Z"
+                  fill="#fff"></path>
+            </svg>
+          </a>
+          <a class="telegram" href="https://t.me/northernworld" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.44364 7.74888C7.08077 5.20867 10.8397 3.534 12.7206 2.72489C18.0907 0.414697 19.2065 0.0133926 19.9338 0.000141289C20.0938 -0.00277319 20.4514 0.0382296 20.6831 0.232668C20.8788 0.396848 20.9326 0.618632 20.9583 0.774293C20.9841 0.929954 21.0162 1.28455 20.9907 1.56163C20.6997 4.7241 19.4405 12.3986 18.7999 15.9406C18.5288 17.4394 17.9951 17.9419 17.4784 17.9911C16.3554 18.098 15.5027 17.2235 14.4151 16.4861C12.7132 15.3323 11.7517 14.614 10.0997 13.488C8.19056 12.1868 9.42819 11.4716 10.5162 10.3027C10.801 9.99686 15.7486 5.34226 15.8444 4.92001C15.8564 4.86721 15.8675 4.67036 15.7544 4.56642C15.6414 4.46248 15.4745 4.49802 15.3541 4.52629C15.1834 4.56636 12.4646 6.42501 7.19761 10.1022C6.42588 10.6503 5.72687 10.9174 5.10058 10.9034C4.41015 10.888 3.08204 10.4996 2.09473 10.1677C0.883743 9.76056 -0.0787216 9.5453 0.00508745 8.85385C0.0487404 8.4937 0.528258 8.12538 1.44364 7.74888Z"
+                    fill="white"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="footer__copy">
+    Авторство © 2025 BoikoAuto. Все права защищены.
+  </p>
+</footer>
+<div class="modal" id="orderModal">
+  <div class="modal__content">
+    <button class="modal__close" id="closeOrderModal">×</button>
+    <h3 class="modal__title">Заявка на услугу</h3>
+    <p class="modal__info">
+      Заполните заявку, и мы свяжемся с вами в ближайшее время
+    </p>
+    <form class="modal__form" id="orderForm">
+      <label for="orderName">Ваше имя:</label>
+      <input id="orderName" type="text" name="name" placeholder="Введите имя" required>
+      <label for="orderPhone">Телефон:</label>
+      <input id="orderPhone" type="tel" name="phone" placeholder="Введите номер телефона" required>
+      <label for="orderService">Желаемая услуга:</label>
+      <select id="orderService" name="orderService" required>
+        <option value="" disabled selected>Выберите услугу</option>
+        <option value="engine">Ремонт и обслуживание двигателя</option>
+        <option value="oil">Замена масла и фильтров</option>
+        <option value="brakes">Обслуживание тормозной системы</option>
+        <option value="tires">Уход за шинами и шиномонтаж</option>
+        <option value="diagnostics">Компьютерная диагностика</option>
+        <option value="suspension">Ремонт подвески</option>
+        <option value="ac">Заправка и ремонт кондиционеров</option>
+      </select>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+<div class="modal" id="reviewModal">
+  <div class="modal__content">
+    <button class="modal__close" id="closeModal">×</button>
+    <h3 class="modal__title">Оставьте свой отзыв</h3>
+    <p class="modal__info">
+      По номеру телефона с вами свяжутся для дальнейшего обсуждения отзыва
+    </p>
+    <form class="modal__form" id="reviewForm">
+      <label for="name">Ваше имя</label>
+      <input id="name" type="text" name="name" placeholder="Введите имя" required>
+      <label for="phone">Телефон</label>
+      <input id="phone" type="number" name="phone" placeholder="Введите номер телефона" required>
+      <label for="message">Ваш отзыв</label>
+      <textarea id="message" name="message" placeholder="Напишите отзыв" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/index.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

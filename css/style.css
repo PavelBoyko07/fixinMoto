@@ -1,0 +1,16 @@
+@import "basic/_reset.css";
+@import "basic/_fonts.css";
+@import "basic/_global.css";
+
+@import "components/_header.css";
+@import "components/_footer.css";
+@import "components/_title-section.css";
+@import "components/_modal.css";
+@import "components/_mobile-menu.css";
+@import "components/_menu-btn.css";
+@import "components/_btn.css";
+
+@import "home/_home.css";
+@import "home/_services.css";
+@import "home/_news.css";
+@import "home/_reviews.css";

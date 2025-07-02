@@ -1,0 +1,127 @@
+.footer {
+  background-color: #292929;
+  padding: 40px 0 30px;
+}
+
+.footer__columns {
+  margin-bottom: 54px;
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column.work {
+  margin-left: auto;
+}
+
+.footer__column-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.footer__left {
+  max-width: 400px;
+}
+
+.footer__copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 32px 15px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__links {
+  display: flex;
+  gap: 11px;
+  flex-direction: column;
+}
+
+.footer__link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  max-width: max-content;
+  transition: color .4s, border .4s;
+}
+
+.footer__link:hover {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.footer__link:focus {
+  border-color: var(--accent);
+  color: white;
+}
+
+.footer__link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer__link.top {
+  margin-top: 18px;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__socials a {
+  border: 1px solid transparent;
+  opacity: 1;
+  width: 48px;
+  height: 48px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #05ce4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.4s, opacity 0.4s, border 0.4s, background-color 0.4s;
+}
+
+.footer__socials a:hover {
+  background-color: #05af41;
+}
+
+.footer__socials a:focus {
+  background-color: transparent;
+  border-color: #05ce4a;
+}
+
+.footer__socials a:focus svg path {
+  fill: #05ce4a;
+}
+
+.footer__socials a.telegram {
+  background-color: #2aabee;
+}
+
+.footer__socials a.telegram svg {
+  transform: translateX(-2px);
+}
+
+.footer__socials a.telegram:hover {
+  background-color: #3ab8ff;
+}
+
+.footer__socials a.telegram:focus {
+  background-color: transparent;
+  border-color: #3ab8ff;
+}
+
+.footer__socials a.telegram:focus svg path {
+  fill: #3ab8ff;
+}

@@ -1,0 +1,45 @@
+:root {
+  --accent: #DB323E;
+}
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.indent {
+  margin-bottom: 120px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 530px) {
+    margin-bottom: 85px;
+  }
+}
+
+.logo {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 13px;
+  font-size: 20px;
+  font-weight: 600;
+}
