@@ -20,10 +20,10 @@
 }
 
 .modal__content {
-  background: white;
+  background: #222222;
   padding: 24px 30px;
   border-radius: 12px;
-  color: #222222;
+  color: white;
   max-width: 500px;
   width: 100%;
   position: relative;
@@ -45,6 +45,7 @@
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: var(--accent);
 }
 
 .modal__info {
@@ -52,14 +53,14 @@
   margin-bottom: 1.5rem;
   font-size: 16px;
   max-width: 300px;
-  color: #555;
+  color: #a6a6a6;
 }
 
 .modal__form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   font-weight: 600;
-  color: #333;
+  color: #939393;
   font-size: 0.95rem;
   cursor: pointer;
   max-width: max-content;
@@ -69,24 +70,24 @@
 .modal__form textarea,
 .modal__form select {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   padding: 0.8rem;
   border-radius: 8px;
   resize: none;
+  color: white;
   font-size: 15px;
-  border: 1px solid #ccc;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.83);
+}
+
+select option {
+  color: black;
 }
 
 .modal__form textarea {
   min-height: 140px;
 }
 
-.modal__form button {
-  background-color: #000;
-  color: #fff;
-  padding: 13px 34px;
-  border: none;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
+.modal__btn {
+  padding: 15px 24px;
 }

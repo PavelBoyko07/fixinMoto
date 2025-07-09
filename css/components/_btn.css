@@ -1,5 +1,6 @@
 .btn {
   display: flex;
+  justify-content: center;
   max-width: max-content;
   background-color: var(--accent);
   padding: 17px 32px;
@@ -9,6 +10,9 @@
   border-radius: 8px;
   border: 1px solid transparent;
   transition: background-color .4s, color .4s, border .4s;
+  @media (max-width: 440px) {
+    font-size: 15px;
+  }
 }
 
 .btn:hover {

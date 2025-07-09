@@ -1,0 +1,31 @@
+.services-stats {
+  background-color: var(--accent);
+  padding: 40px 0;
+}
+
+.services-stats__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.services-stats__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 18px;
+  padding: 0 25px;
+}
+
+.services-stats__item:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+.services-stats__digital {
+  font-size: 54px;
+  font-weight: 600;
+  color: white;
+}
+
+.services-stats__text {
+  color: rgba(255, 255, 255, 0.76);
+}
