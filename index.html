@@ -30,7 +30,7 @@
             <a class="header__link desktop" href="#services">Все услуги</a>
           </li>
           <li>
-            <a class="header__link" href="about.html">О нас</a>
+            <a class="header__link desktop" href="#about">О нас</a>
           </li>
           <li>
             <a class="header__link desktop" href="#reviews">Отзывы</a>
@@ -129,7 +129,7 @@
       <a class="home-services__link btn" href="services.html">Посмотреть все услуги</a>
     </div>
   </section>
-  <section class="about indent">
+  <section class="about indent" id="about">
     <div class="container">
       <h2 class="about__title title-section">GeometryAuto в деле за кулисами автосервиса</h2>
       <p class="about__text">
@@ -153,6 +153,15 @@
         </a>
       </div>
     </div>
+  </section>
+  <section class="banner">
+    <h3 class="banner__title">
+      Бесплатное техобслуживание каждую неделю!
+    </h3>
+    <p class="banner__text">
+      Подпишитесь на наш Telegram-канал и участвуйте в розыгрыше купона.
+    </p>
+    <a class="banner__btn btn" href="https://t.me/DankyX" target="_blank">Перейти в канал</a>
   </section>
   <section class="reviews indent" id="reviews">
     <div class="container">
@@ -362,8 +371,8 @@
   <div class="container">
     <div class="footer__columns">
       <div class="footer__column footer__left">
-        <a class="logo" href="/">
-          <img class="header__logo" src="images/logo.svg" width="42" height="42" alt="Логотип">
+        <a class="logo bottom" href="/">
+          <img src="images/logo.svg" width="42" height="42" alt="Логотип">
           BoikoAuto
         </a>
         <a class="footer__link top" href="https://yandex.ru/maps/-/CHghqF85" target="_blank">
@@ -397,14 +406,14 @@
           hello@GeometryAuto.com
         </a>
       </div>
-      <div class="footer__column work">
+      <div class="footer__column work span">
         <h3 class="footer__column-name">График работы</h3>
         <p class="footer__info">
           ПН-ПТ : 08.00 - 20.00 <br> <br>
           СБ-ВС : 10.00 - 17.00
         </p>
       </div>
-      <div class="footer__column">
+      <div class="footer__column span">
         <h3 class="footer__column-name">Основные разделы</h3>
         <div class="footer__links">
           <a class="footer__link" href="">Все услуги</a>
@@ -414,7 +423,7 @@
           <a class="footer__link" href="">Контакты</a>
         </div>
       </div>
-      <div class="footer__column">
+      <div class="footer__column social">
         <h3 class="footer__column-name">Соц. сети</h3>
         <div class="footer__socials">
           <a class="whatsapp" href="https://wa.me/79935234862" target="_blank">
@@ -462,7 +471,7 @@
         <option value="suspension">Ремонт подвески</option>
         <option value="ac">Заправка и ремонт кондиционеров</option>
       </select>
-      <button type="submit">Отправить</button>
+      <button class="modal__btn btn" type="submit">Отправить заявку</button>
     </form>
   </div>
 </div>
@@ -470,7 +479,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="js/index.js"></script>
 <script src="js/menu.js"></script>
-<script src="js/modal.js"></script>
+<script src="js/modalMain.js"></script>
 <script src="js/scroll.js"></script>
 </body>
 </html>

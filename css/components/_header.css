@@ -88,29 +88,3 @@
 .header__phone:focus {
   border-color: #5cff7c;
 }
-
-.header__logo {
-  @media (max-width: 1300px) {
-    width: 194px;
-    height: auto;
-  }
-  @media (max-width: 992px) {
-    width: 180px;
-  }
-  @media (max-width: 600px) {
-    width: 170px;
-  }
-  @media (max-width: 530px) {
-    width: 162px;
-  }
-  @media (max-width: 420px) {
-    width: 154px;
-  }
-}
-
-.header__right {
-  @media (max-width: 1160px) {
-    display: flex;
-    gap: 26px;
-  }
-}

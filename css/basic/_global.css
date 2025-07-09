@@ -44,6 +44,17 @@ body {
   font-weight: 600;
 }
 
+.logo.bottom {
+  margin-bottom: 24px;
+}
+
+.logo img {
+  @media (max-width: 610px) {
+    width: 37px;
+    height: 37px;
+  }
+}
+
 ::selection {
   background-color: var(--accent);
   color: white;

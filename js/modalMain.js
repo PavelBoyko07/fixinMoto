@@ -1,3 +1,17 @@
+/**
+ * Скрипт управления модальным окном для оформления заявки на услугу
+ *
+ * 1. openModal(modalId) / closeModal(modalId)
+ *    — Открывает/закрывает модалку по ID, добавляя/удаляя классы 'active' и блокируя скролл страницы.
+ *
+ * 2. Обработчики событий:
+ *    — Открытие окна заказа услуги через дата-атрибут ([data-btn-modal-order])
+ *    — Закрытие по кнопке и клику вне контента модального окна
+ *
+ * 3. Отправка формы
+ *    — Блокирует стандартную отправку, выводит alert, закрывает модалку и сбрасывает форму
+ */
+
 function openModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
@@ -17,15 +31,11 @@ function closeModal(modalId) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const reviewOpenBtn = document.getElementById('cases_btn');
-  const reviewCloseBtn = document.getElementById('closeModal');
-  reviewOpenBtn?.addEventListener('click', () => openModal('reviewModal'));
-  reviewCloseBtn?.addEventListener('click', () => closeModal('reviewModal'));
-
   const orderCloseBtn = document.getElementById('closeOrderModal');
   document.querySelectorAll('[data-btn-modal-order]').forEach(btn => {
     btn.addEventListener('click', () => openModal('orderModal'));
   });
+
   orderCloseBtn?.addEventListener('click', () => closeModal('orderModal'));
 
   document.querySelectorAll('.modal').forEach(modal => {
@@ -40,15 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('orderForm')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Заявка отправлена!');
+    alert('Заявка отправлена! Ожидайте дальнейшей связи через указанный вами номер телефона');
     closeModal('orderModal');
-    e.target.reset();
-  });
-
-  document.getElementById('reviewForm')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Отзыв отправлен!');
-    closeModal('reviewModal');
     e.target.reset();
   });
 });

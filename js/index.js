@@ -1,3 +1,7 @@
+/**
+ * Файл главной страницы - инициализация плагина для воспроизведения видео, а также двух слайдеров
+ */
+
 Fancybox.bind("[data-fancybox]", {});
 
 new Swiper('.news__swiper', {
@@ -24,3 +28,26 @@ new Swiper('.reviews__swiper', {
     nextEl: '.reviews__btn--next'
   },
 });
+
+function animateBanner() {
+  const banner = document.querySelector('.banner');
+  const title = document.querySelector('.banner__title');
+  const text = document.querySelector('.banner__text');
+  const btn = document.querySelector('.banner__btn');
+
+  banner.classList.remove('animate');
+  title.classList.remove('animate');
+  text.classList.remove('animate');
+  btn.classList.remove('animate');
+
+  setTimeout(() => {
+    banner.classList.add('animate');
+    title.classList.add('animate');
+    text.classList.add('animate');
+    btn.classList.add('animate');
+  }, 50);
+}
+
+animateBanner();
+
+setInterval(animateBanner, 6000);

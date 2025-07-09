@@ -1,6 +1,6 @@
 .footer {
   background-color: #292929;
-  padding: 40px 0 30px;
+  padding-top: 40px;
 }
 
 .footer__columns {
@@ -8,15 +8,38 @@
   display: flex;
   gap: 70px;
   justify-content: space-between;
+  @media (max-width: 1100px) {
+    margin-bottom: 38px;
+  }
+  @media (max-width: 992px) {
+    gap: 50px;
+  }
+  @media (max-width: 920px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 45px;
+  }
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
+  @media (max-width: 920px) {
+
+  }
 }
 
 .footer__column.work {
   margin-left: auto;
+  @media (max-width: 992px) {
+    margin-left: 0;
+  }
+}
+
+.footer__column.social {
+  @media (max-width: 920px) {
+    width: 100%;
+  }
 }
 
 .footer__column-name {
@@ -24,18 +47,62 @@
   font-weight: 500;
   color: white;
   margin-bottom: 24px;
+  @media (max-width: 1100px) {
+    font-size: 18px;
+  }
+  @media (max-width: 610px) {
+    margin-bottom: 18px;
+  }
 }
 
 .footer__left {
   max-width: 400px;
+  @media (max-width: 1030px) {
+    max-width: 260px;
+  }
+  @media (max-width: 920px) {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .footer__copy {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 32px 15px 0;
+  padding: 32px 15px 30px 0;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
+  @media (max-width: 1100px) {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 660px) {
+    font-size: 15px;
+  }
+  @media (max-width: 468px) {
+    font-size: 14px;
+  }
+  @media (max-width: 420px) {
+    padding: 18px 70px;
+  }
+  @media (max-width: 360px) {
+    padding: 16px 50px;
+  }
+}
+
+.footer__info {
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
+  @media (max-width: 468px) {
+    line-height: 1.8;
+  }
+}
+
+.footer__info br:last-child {
+  @media (max-width: 468px) {
+    display: none;
+  }
 }
 
 .footer__links {
@@ -52,6 +119,9 @@
   border: 2px solid transparent;
   max-width: max-content;
   transition: color .4s, border .4s;
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
 }
 
 .footer__link:hover {
@@ -66,10 +136,14 @@
 .footer__link svg {
   width: 18px;
   height: 18px;
+  flex: 1 0 auto;
 }
 
 .footer__link.top {
   margin-top: 18px;
+  @media (max-width: 1100px) {
+    margin-top: 15px;
+  }
 }
 
 .footer__socials {
@@ -90,6 +164,11 @@
   justify-content: center;
   align-items: center;
   transition: color 0.4s, opacity 0.4s, border 0.4s, background-color 0.4s;
+  @media (max-width: 468px) {
+    width: 44px;
+    height: 44px;
+    padding: 9px;
+  }
 }
 
 .footer__socials a:hover {

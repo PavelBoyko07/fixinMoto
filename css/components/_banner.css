@@ -1,0 +1,138 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../images/banner.jpg");
+  max-width: 98%;
+  width: 100%;
+  margin: 0 auto 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+  min-height: 420px;
+  position: relative;
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 14px;
+}
+
+.banner * {
+  position: relative;
+  z-index: 10;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+.banner__text {
+  color: #dcdcdc;
+  font-size: 20px;
+  max-width: 470px;
+  margin: 0 auto 30px;
+  opacity: 0;
+  animation-delay: 1.4s;
+}
+
+@keyframes fadeInBanner {
+  0% {
+    opacity: 0;
+    transform: scale(0.86);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner__title,
+.banner__text,
+.banner__btn {
+  opacity: 0;
+}
+
+.banner.animate {
+  animation: fadeInBanner 1.4s ease forwards;
+}
+
+.banner__title.animate {
+  animation: fadeInUp 1.4s ease forwards;
+}
+
+.banner__text.animate {
+  animation: fadeInUp 1.4s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.banner__btn.animate {
+  animation: fadeInUp 1.4s ease forwards;
+  animation-delay: 0.7s;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 24px;
+  }
+
+  .banner__text {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 290px;
+  }
+}
+
+@media (max-width: 610px) {
+  .banner__title {
+    font-size: 23px;
+  }
+
+  .banner__btn {
+    padding: 14px 29px;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    margin: 60px -7px 0;
+    width: auto;
+  }
+
+  .banner__title {
+    font-size: 22px;
+  }
+}
