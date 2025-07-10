@@ -12,10 +12,31 @@
   background-color: var(--accent);
   border-radius: 12px 12px 0 0;
   margin-right: -160px;
+  @media (max-width: 1300px) {
+    margin-right: -130px;
+  }
+  @media (max-width: 1200px) {
+    margin-right: -110px;
+  }
+  @media (max-width: 992px) {
+    margin: 0 -16px;
+  }
 }
 
 .reviews__swiper {
   padding: 60px 60px 30px;
+  @media (max-width: 1300px) {
+    padding: 45px 45px 30px;
+  }
+  @media (max-width: 860px) {
+    padding: 45px 30px 30px;
+  }
+  @media (max-width: 530px) {
+    padding: 45px 22px 30px;
+  }
+  @media (max-width: 468px) {
+    padding: 38px 20px 30px;
+  }
 }
 
 .swiper-wrapper {
@@ -23,8 +44,18 @@
 }
 
 .reviews__swiper .swiper-slide {
+  cursor: pointer;
   max-width: 500px;
   height: 100%;
+  @media (max-width: 1300px) {
+    max-width: 450px;
+  }
+  @media (max-width: 768px) {
+    max-width: 420px;
+  }
+  @media (max-width: 500px) {
+    max-width: 99%;
+  }
 }
 
 .reviews__card {
@@ -36,6 +67,12 @@
   overflow: hidden;
   padding: 60px 40px 40px;
   color: rgba(34, 34, 34, 0.65);
+  @media (max-width: 1300px) {
+    padding: 40px 30px 30px;
+  }
+  @media (max-width: 1100px) {
+    padding: 30px 25px;
+  }
 }
 
 .reviews__img {
@@ -43,10 +80,25 @@
   object-position: center;
   object-fit: cover;
   margin-bottom: 32px;
+  @media (max-width: 1300px) {
+    width: 94px;
+    height: 94px;
+  }
+  @media (max-width: 610px) {
+    width: 88px;
+    height: 88px;
+  }
+  @media (max-width: 468px) {
+    width: 82px;
+    height: 82px;
+  }
 }
 
 .reviews__text {
   margin-bottom: 44px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .reviews__name {
@@ -56,6 +108,13 @@
   line-height: 1.2;
   color: #222222;
   margin-bottom: 10px;
+  @media (max-width: 1100px) {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .reviews__bottom {
@@ -65,6 +124,13 @@
   gap: 40px;
   margin-top: 40px;
   margin-right: 100px;
+  @media (max-width: 992px) {
+    margin-right: 0;
+  }
+  @media (max-width: 420px) {
+    flex-direction: column-reverse;
+    gap: 26px;
+  }
 }
 
 .reviews__navigation {
@@ -72,6 +138,9 @@
   gap: 20px;
   align-items: center;
   margin-left: auto;
+  @media (max-width: 420px) {
+    margin-left: 0;
+  }
 }
 
 .reviews__link:hover {
@@ -95,4 +164,17 @@
 
 .reviews__btn:focus {
   border-color: white;
+}
+
+.reviews__btn svg {
+  @media (max-width: 1100px) {
+    width: 30px;
+    height: auto;
+  }
+}
+
+.reviews__link {
+  @media (max-width: 860px) {
+    padding: 15px 29px;
+  }
 }

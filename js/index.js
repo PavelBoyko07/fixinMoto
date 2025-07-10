@@ -28,7 +28,7 @@ new Swiper('.news__swiper', {
 
 new Swiper('.reviews__swiper', {
   slidesPerView: 'auto',
-  spaceBetween: 18,
+
   autoHeight: true,
   loop: true,
   speed: 600,
@@ -36,6 +36,14 @@ new Swiper('.reviews__swiper', {
     prevEl: '.reviews__btn--prev',
     nextEl: '.reviews__btn--next'
   },
+  breakpoints: {
+    610: {
+      spaceBetween: 18,
+    },
+    300: {
+      spaceBetween: 12
+    }
+  }
 });
 
 function animateBanner() {
