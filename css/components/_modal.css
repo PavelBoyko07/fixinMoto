@@ -30,6 +30,12 @@
   transform: translateY(-20px);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  @media (max-width: 610px) {
+    max-width: 95%;
+  }
+  @media (max-width: 468px) {
+    padding: 24px 24px;
+  }
 }
 
 .modal.active .modal__content {
@@ -48,6 +54,14 @@
   color: var(--accent);
 }
 
+.modal__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  @media (max-width: 420px) {
+    font-size: 21px;
+  }
+}
+
 .modal__info {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
@@ -61,9 +75,12 @@
   margin-bottom: 7px;
   font-weight: 600;
   color: #c7c7c7;
-  font-size: 0.95rem;
+  font-size: 16px;
   cursor: pointer;
   max-width: max-content;
+  @media (max-width: 610px) {
+    font-size: 15px;
+  }
 }
 
 .modal__form input,
