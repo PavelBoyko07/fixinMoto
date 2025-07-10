@@ -13,9 +13,10 @@
 
 @import "home/_home.css";
 @import "home/_services.css";
+@import "home/_about.css";
+@import "home/_process.css";
 @import "home/_news.css";
 @import "home/_reviews.css";
-@import "home/_about.css";
 
 @import "pages/services/_stats.css";
 @import "pages/services/_services-start.css";
