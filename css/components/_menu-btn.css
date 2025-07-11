@@ -8,17 +8,17 @@
   background: transparent;
   transition: background-color .4s, border .4s;
   display: none;
-  @media (max-width: 1160px) {
+  @media (max-width: 950px) {
     display: block;
     margin-left: auto;
   }
 
   &:hover {
-    border-color: #02ea53;
+    border-color: var(--accent);
   }
 
   &:focus {
-    background-color: #1cbb3e;
+    background-color: var(--accent);
     border-color: transparent;
   }
 }

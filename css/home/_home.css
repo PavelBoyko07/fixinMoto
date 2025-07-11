@@ -11,6 +11,24 @@
   overflow: hidden;
   position: relative;
   border-radius: 0 0 40px 40px;
+  @media (max-width: 1100px) {
+    min-height: 780px;
+  }
+  @media (max-width: 992px) {
+    min-height: 720px;
+    border-radius: 0 0 30px 30px;
+  }
+  @media (max-width: 768px) {
+    min-height: auto;
+    padding-top: 140px;
+    padding-bottom: 90px;
+  }
+  @media (max-width: 610px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 468px) {
+    padding-bottom: 50px;
+  }
 }
 
 .home::before {
@@ -22,7 +40,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   @media (max-width: 468px) {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .65);
   }
 }
 
@@ -36,6 +54,47 @@
   font-weight: 600;
   line-height: 1.05;
   margin-bottom: 25px;
+  @media (max-width: 1300px) {
+    font-size: 78px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 72px;
+  }
+  @media (max-width: 1100px) {
+    font-size: 66px;
+  }
+  @media (max-width: 992px) {
+    font-size: 62px;
+  }
+  @media (max-width: 900px) {
+    font-size: 58px;
+  }
+  @media (max-width: 810px) {
+    max-width: 680px;
+  }
+  @media (max-width: 768px) {
+    font-size: 54px;
+    max-width: 620px;
+  }
+  @media (max-width: 680px) {
+    font-size: 50px;
+    max-width: 590px;
+  }
+  @media (max-width: 610px) {
+    font-size: 46px;
+  }
+  @media (max-width: 560px) {
+    font-size: 42px;
+  }
+  @media (max-width: 468px) {
+    font-size: 40px;
+  }
+  @media (max-width: 410px) {
+    font-size: 38px;
+  }
+  @media (max-width: 380px) {
+    font-size: 36px;
+  }
 }
 
 .home__title span {
@@ -45,9 +104,28 @@
 .home__text {
   max-width: 550px;
   margin-bottom: 32px;
+  @media (max-width: 560px) {
+    font-size: 17px;
+  }
+  @media (max-width: 468px) {
+    font-size: 16px;
+  }
 }
 
 .home__actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 18px;
+  @media (max-width: 468px) {
+    gap: 12px;
+  }
+}
+
+.home__action {
+  @media (max-width: 530px) {
+    padding: 15px 27px;
+  }
+  @media (max-width: 468px) {
+    padding: 15px 24px;
+  }
 }

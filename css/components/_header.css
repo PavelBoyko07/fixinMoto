@@ -5,6 +5,9 @@
   padding-top: 30px;
   max-width: 100%;
   width: 100%;
+  @media (max-width: 992px) {
+    padding-top: 23px;
+  }
 }
 
 .header__inner {
@@ -15,10 +18,13 @@
     position: relative;
     z-index: 100;
   }
+  @media (max-width: 1100px) {
+    justify-content: space-between;
+  }
 }
 
 .header__nav {
-  @media (max-width: 1160px) {
+  @media (max-width: 950px) {
     display: none;
   }
 }
@@ -27,7 +33,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  @media (max-width: 1160px) {
+  @media (max-width: 950px) {
     flex-direction: column;
     gap: 35px;
   }
@@ -40,7 +46,7 @@
   color: white;
   font-size: 18px;
   transition: color .4s, border .4s;
-  @media (max-width: 1170px) {
+  @media (max-width: 950px) {
     font-size: 20px;
   }
   @media (max-width: 610px) {
